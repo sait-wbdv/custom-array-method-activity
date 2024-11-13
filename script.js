@@ -38,9 +38,22 @@ function map(array, callback) {
 // 4. Reduce: Returns a single value after performing a provided "reducer" callback function ie. add all numbers in an array together
 function reduce(array, callback, initialValue) {
   // accumulator
+  let accumulator = initialValue;
   // loop
+  for (let i = 0; i < array.length; i++) {
+    accumulator = callback(accumulator, array[i], i, array);
+  }
   // return
+  return accumulator;
 }
+
+const sumOfPrimes = reduce(
+  primeArray,
+  (accumulator, current) => accumulator + current,
+  0
+);
+
+console.log(sumOfPrimes);
 
 // 5. Find: Returns the first element in an array that satisfies the provided test function
 function find(array, callback) {
