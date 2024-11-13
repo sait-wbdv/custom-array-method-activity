@@ -31,9 +31,19 @@ function filter(array, callback) {
 // 3. Map: Returns a new array populated with results of the original array with a function executed on each element
 function map(array, callback) {
   // output array
+  let output = [];
   // loop
+  for (let i = 0; i < array.length; i++) {
+    output.push(callback(array[i], i.array));
+  }
   // return
+  return output;
 }
+
+const titles = map(movieArray, (movie) => {
+  return movie.title;
+});
+console.log("Movie Titles: ", titles);
 
 // 4. Reduce: Returns a single value after performing a provided "reducer" callback function ie. add all numbers in an array together
 function reduce(array, callback, initialValue) {
