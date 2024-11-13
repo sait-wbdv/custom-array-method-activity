@@ -18,7 +18,15 @@ const primeArray = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
 // 1. For Each: Exectutes a provided function once for each array element
 function forEach(array, callback) {
   // loop
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i], i, array);
+  }
 }
+
+// implementation
+forEach(movieArray, (movie) => {
+  console.log(movie);
+});
 
 // 2. Filter: Returns a copy of an array with only the elements that pass a provided test
 function filter(array, callback) {
