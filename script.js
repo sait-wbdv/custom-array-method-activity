@@ -39,6 +39,11 @@ function map(array, callback) {
   // return
 }
 
+const bookTitles = map(bookArray, (book) => {
+  return book.title;
+});
+
+console.log(bookTitles);
 // 4. Reduce: Returns a single value after performing a provided "reducer" callback function ie. add all numbers in an array together
 function reduce(array, callback, initialValue) {
   // accumulator
