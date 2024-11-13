@@ -1,8 +1,12 @@
 # Array Methods Refactor Challenge
 
-Welcome back from reading week! In this exercise, you'll deepen your understanding of functions and prepare for learning about powerful array methods.
+## Repo Overview
 
-**Instructions:**
+- main branch: starter code and comments
+- use-examples branch: shows how to implement but no spoilers
+- method named branches: containes spoiler code
+
+## Instructions:
 
 1. **Pair Up:** Find a partner to collaborate with on this activity.
 2. **Understand the Data:** Take a look at the `arrayOfObjects` provided in `script.js`. It's a simple array of objects, each representing a book with properties like title, author, and year.
@@ -24,13 +28,13 @@ Welcome back from reading week! In this exercise, you'll deepen your understandi
    - What are the benefits of using functions in this way?
    - How do these custom methods help you understand the purpose of the built-in JavaScript array methods?
 
-**Tips:**
+### Tips:
 
 - **Break It Down:** Focus on one method at a time.
 - **Test Frequently:** Don't wait until the end to test your code. Test each method as you go.
 - **Collaborate Effectively:** Communicate with your partner, share ideas, and help each other out.
 
-**Learning Goals:**
+### Learning Goals:
 
 - Reinforce understanding of functions and how they work.
 - Gain a deeper understanding of the logic behind common array methods.
