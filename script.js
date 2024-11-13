@@ -2,7 +2,7 @@
 
 // Use this array to test and practice with your code
 
-const movieArray = [
+const bookArray = [
   { title: "The Lord of the Rings", author: "J.R.R. Tolkien", year: 1954 },
   { title: "Pride and Prejudice", author: "Jane Austen", year: 1813 },
   { title: "1984", author: "George Orwell", year: 1949 },
@@ -24,8 +24,8 @@ function forEach(array, callback) {
 }
 
 // implementation
-forEach(movieArray, (movie) => {
-  console.log(movie);
+forEach(bookArray, (book) => {
+  console.log(book);
 });
 
 // 2. Filter: Returns a copy of an array with only the elements that pass a provided test
