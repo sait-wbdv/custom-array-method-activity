@@ -2,7 +2,7 @@
 
 // Use this array to test and practice with your code
 
-const movieArray = [
+const bookArray = [
   { title: "The Lord of the Rings", author: "J.R.R. Tolkien", year: 1954 },
   { title: "Pride and Prejudice", author: "Jane Austen", year: 1813 },
   { title: "1984", author: "George Orwell", year: 1949 },
@@ -40,10 +40,10 @@ function map(array, callback) {
   return output;
 }
 
-const titles = map(movieArray, (movie) => {
-  return movie.title;
+const titles = map(bookArray, (book) => {
+  return book.title;
 });
-console.log("Movie Titles: ", titles);
+console.log("book Titles: ", titles);
 
 // 4. Reduce: Returns a single value after performing a provided "reducer" callback function ie. add all numbers in an array together
 function reduce(array, callback, initialValue) {
