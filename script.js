@@ -13,12 +13,38 @@ const movieArray = [
   },
 ];
 
+const primeArray = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
+
 // 1. For Each: Exectutes a provided function once for each array element
+function forEach(array, callback) {
+  // loop
+}
 
 // 2. Filter: Returns a copy of an array with only the elements that pass a provided test
+function filter(array, callback) {
+  // output array
+  // loop
+  // condition
+  // return
+}
 
 // 3. Map: Returns a new array populated with results of the original array with a function executed on each element
+function map(array, callback) {
+  // output array
+  // loop
+  // return
+}
 
 // 4. Reduce: Returns a single value after performing a provided "reducer" callback function ie. add all numbers in an array together
+function reduce(array, callback, initialValue) {
+  // accumulator
+  // loop
+  // return
+}
 
 // 5. Find: Returns the first element in an array that satisfies the provided test function
+function find(array, callback) {
+  // loop
+  // condition
+  // return
+}
