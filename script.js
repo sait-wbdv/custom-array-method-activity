@@ -38,9 +38,10 @@ function map(array, callback) {
 // 4. Reduce: Returns a single value after performing a provided "reducer" callback function ie. add all numbers in an array together
 function reduce(array, callback, initialValue) {
   // accumulator
-  let accumulator = initialValue;
+  let accumulator = initialValue !== undefined ? initialValue : array[0];
+  const startIndex = initialValue !== undefined ? 0 : 1;
   // loop
-  for (let i = 0; i < array.length; i++) {
+  for (let i = startIndex; i < array.length; i++) {
     accumulator = callback(accumulator, array[i], i, array);
   }
   // return
