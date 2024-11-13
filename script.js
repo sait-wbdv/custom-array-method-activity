@@ -2,7 +2,7 @@
 
 // Use this array to test and practice with your code
 
-const movieArray = [
+const bookArray = [
   { title: "The Lord of the Rings", author: "J.R.R. Tolkien", year: 1954 },
   { title: "Pride and Prejudice", author: "Jane Austen", year: 1813 },
   { title: "1984", author: "George Orwell", year: 1949 },
@@ -23,11 +23,23 @@ function forEach(array, callback) {
 // 2. Filter: Returns a copy of an array with only the elements that pass a provided test
 function filter(array, callback) {
   // output array
+  const output = [];
   // loop
-  // condition
+  for (let i = 0; i < array.length; i++) {
+    // condition
+    if (callback(array[i], i, array)) {
+      output.push(array[i]);
+    }
+  }
   // return
+  return output;
 }
 
+const booksPost1950 = filter(bookArray, (book) => {
+  return book.year > 1950;
+});
+
+console.log(booksPost1950);
 // 3. Map: Returns a new array populated with results of the original array with a function executed on each element
 function map(array, callback) {
   // output array
