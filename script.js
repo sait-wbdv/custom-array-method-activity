@@ -20,6 +20,10 @@ function forEach(array, callback) {
   // loop
 }
 
+forEach(bookArray, (book) => {
+  console.log(book.title, book.year);
+});
+
 // 2. Filter: Returns a copy of an array with only the elements that pass a provided test
 function filter(array, callback) {
   // output array
