@@ -45,6 +45,17 @@ function reduce(array, callback, initialValue) {
 // 5. Find: Returns the first element in an array that satisfies the provided test function
 function find(array, callback) {
   // loop
-  // condition
+  for (let i = 0; i < array.length; i++) {
+    // condition
+    if (callback(array[i], i, array)) {
+      return array[i];
+    }
+  }
   // return
+  return undefined;
 }
+
+const firstNumAbove10 = find(primeArray, (number) => {
+  return number > 10;
+});
+console.log(firstNumAbove10);
